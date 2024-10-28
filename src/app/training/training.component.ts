@@ -3,11 +3,12 @@ import { Router } from '@angular/router';
 import { SidenavComponent } from '../sidenav/sidenav.component';
 import { Footer1Component } from "../footer1/footer1.component";
 import { FeedbackComponent } from "../feedback/feedback.component";
+import { HttpClientModule } from '@angular/common/http';
 
 @Component({
   selector: 'app-training',
   standalone: true,
-  imports: [SidenavComponent, Footer1Component, FeedbackComponent],
+  imports: [SidenavComponent, Footer1Component, FeedbackComponent,HttpClientModule],
   templateUrl: './training.component.html',
   styleUrls: ['./training.component.css']
 })

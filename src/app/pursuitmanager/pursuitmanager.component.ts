@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { TopnavallComponent } from '../topnavall/topnavall.component';
 import { Footer1Component } from "../footer1/footer1.component";
 import { FeedbackComponent } from "../feedback/feedback.component";
@@ -9,7 +9,7 @@ import { FeedbackComponent } from "../feedback/feedback.component";
 @Component({
   selector: 'app-pursuitmanager',
   standalone:true,
-  imports: [TopnavallComponent, Footer1Component, FeedbackComponent],
+  imports: [TopnavallComponent, Footer1Component, FeedbackComponent,HttpClientModule],
   templateUrl: './pursuitmanager.component.html',
   styleUrls: ['./pursuitmanager.component.css'],
 })

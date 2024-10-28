@@ -5,11 +5,12 @@ import { TopnavComponent } from '../topnav/topnav.component';
 import { FeedbackComponent } from "../feedback/feedback.component";
 import { Footer1Component } from "../footer1/footer1.component";
 import { CommonModule } from '@angular/common';
+import { HttpClientModule } from '@angular/common/http';
 
 @Component({
   selector: 'app-student-registration',
   standalone: true,
-  imports: [FormsModule, ReactiveFormsModule, TopnavComponent, FeedbackComponent, Footer1Component, CommonModule],
+  imports: [FormsModule, ReactiveFormsModule, TopnavComponent, FeedbackComponent, Footer1Component, CommonModule,HttpClientModule],
   templateUrl: './student-registration.component.html',
   styleUrls: ['./student-registration.component.css']
 })
